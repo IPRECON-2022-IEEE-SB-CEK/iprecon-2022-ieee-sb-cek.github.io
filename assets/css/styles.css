@@ -1,0 +1,36 @@
+@media (max-width:768px,) {
+    .formm {
+        width:1280px;
+        height:2400px;
+    }
+}
+@media (max-width:765px,) {
+    .formm {
+        width:1280px;
+        height:2390px;
+    }
+}
+@media (max-width:414px) {
+    .formm {
+        width:1280px;
+        height:3320px;
+    }
+}
+@media (max-width:360px) {
+    .formm {
+        width:1280px;
+        height:3900px;
+    }
+}
+@media (max-width:320px) {
+    .formm {
+        width:1280px;
+        height:4020px;
+    }
+}
+@media (max-width:375px) {
+    .formm {
+        width:1280px;
+        height:3500px;
+    }
+}

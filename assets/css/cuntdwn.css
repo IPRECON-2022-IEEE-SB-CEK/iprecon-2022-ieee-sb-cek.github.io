@@ -1,0 +1,80 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .cuntdwn {
+    align-items: center;
+    background-color: #210f21;
+    display: flex;
+    font-family: -apple-system, 
+      BlinkMacSystemFont, 
+      "Segoe UI", 
+      Roboto, 
+      Oxygen-Sans, 
+      Ubuntu, 
+      Cantarell, 
+      "Helvetica Neue", 
+      sans-serif;
+  }
+  
+  .cuntdwn .container {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .cuntdwn h1 {
+    font-size: 2rem;
+    font-weight: 20px;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+  }
+  
+  .cuntdwn li {
+    display: inline-block;
+    font-size: 1.2em;
+    list-style-type: none;
+    padding: 1.8em;
+    text-transform: uppercase;
+  }
+  
+  .cuntdwn li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+  
+  .emoji {
+    display: none;
+    padding: 1rem;
+  }
+  
+  .emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+  }
+  
+  @media all and (max-width: 768px) {
+    .cuntdwn h1 {
+      font-size: 1.4rem;
+    }
+    
+    .cuntdwn li {
+      font-size: 0.7rem;
+      padding: .75rem;
+    }
+    
+    .cuntdwn li span {
+      font-size: 2.5rem;
+    }
+  }
