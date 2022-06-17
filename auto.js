@@ -17,6 +17,15 @@ async function ip4(){
     return bool
     
 }
+
+async function fast(array){
+    let out=[]
+    array.forEach(async(n)=>{
+        let {stdout,stderr}=await exe(n)
+        out.push(stdout,stderr)
+    })
+    return out
+}
 (async function(){
     const {stdout} = await exe(`ls`)
     let files      = stdout.split('\n').filter(n=>n)
@@ -46,10 +55,11 @@ async function ip4(){
                try{
                 n=n.split('\\')
                 try{
-                    let [a,b,c]=[await exe('git add .'),
-                    await exe('git push origin main'),
-                    await exe(`git commit -m "auto update in ${n[n.length-1].length!=1 ? n[n.length-1]: n} @ (${new Date().toString().split(' ')[4]})"`)]
-                    console.log([a,b,c].j)
+                    let out = await fast(['git add .',
+                    `git commit -m "auto update in ${n[n.length-1].length!=1 ? n[n.length-1]: n} @ (${new Date().toString().split(' ')[4]})"`,
+                    'git push origin main']
+                    ) 
+                    console.log(out.join('\n'))
                 }
                 catch(e){
 
