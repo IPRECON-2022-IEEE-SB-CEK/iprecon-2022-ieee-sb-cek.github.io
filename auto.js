@@ -21,7 +21,10 @@ async function ip4(){
 async function fast(array){
     let out=[]
     array.forEach(async(n)=>{
+        try{
         let {stdout,stderr}=await exe(n)
+        }
+        catch(e){}
         out.push(stdout,stderr)
     })
     return out
