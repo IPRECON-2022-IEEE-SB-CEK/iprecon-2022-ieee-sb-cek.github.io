@@ -48,13 +48,6 @@ async function ip4(){
                 n=n.split('\\')
                }
               catch(e){}
-                try{
-                    await exe(`git add . && git commit -m "auto update in ${n[n.length-1].length!=1 ? n[n.length-1]: n} @ (${new Date().toString().split(' ')[4]})" && git push`)
-                    console.log(`git add . && git commit -m "auto update in ${n[n.length-1].length!=1 ? n[n.length-1]: n} @ (${new Date().toString().split(' ')[4]})" && git push`)
-                }
-                catch(e){
-
-                }
             }
         
         });
