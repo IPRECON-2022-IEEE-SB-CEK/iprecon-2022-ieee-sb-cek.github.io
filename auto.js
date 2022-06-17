@@ -23,9 +23,10 @@ async function fast(array){
     array.forEach(async(n)=>{
         try{
         let {stdout}=await exe(n)
+        out.push(stdout)
         }
         catch(e){}
-        out.push(stdout)
+        
     })
     return out
 }
