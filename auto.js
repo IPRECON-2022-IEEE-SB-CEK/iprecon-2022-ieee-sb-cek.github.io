@@ -12,7 +12,6 @@ async function ip4(){
         console.log(`connected to internet \n ${ip[0]}`)
     }
     catch(e){
-        
         bool=false
     }
     return bool
